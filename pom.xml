@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>24</version>
+    <version>29</version>
     <relativePath />
   </parent>
 
@@ -54,7 +54,7 @@
     <parquet.version>1.12.2</parquet.version>
     <parquet.format.version>2.8.0</parquet.format.version>
     <calcite.groupId>org.apache.calcite</calcite.groupId>
-    <calcite.version>1.33.0</calcite.version>
+    <calcite.version>1.34.0</calcite.version>
     <avatica.version>1.23.0</avatica.version>
     <janino.version>3.1.8</janino.version>
     <sqlline.version>1.12.0</sqlline.version>
@@ -1063,10 +1063,6 @@
             <doclint>none</doclint>
           </configuration>
         </plugin>
-
-        <!--Note: apache-21.pom has the latest versions of apache-rat-plugin, maven-dependency-plugin and
-        maven-clean-plugin. Once the newer versions are needed and present in maven repo, the plugins versions can be
-        overridden here-->
       </plugins>
     </pluginManagement>
   </build>
@@ -2211,6 +2207,10 @@
                 <groupId>commons-httpclient</groupId>
                 <artifactId>commons-httpclient</artifactId>
               </exclusion>
+              <exclusion>
+                <groupId>dnsjava</groupId>
+                <artifactId>dnsjava</artifactId>
+              </exclusion>
             </exclusions>
           </dependency>
           <dependency>
@@ -2377,6 +2377,10 @@
               <exclusion>
                 <groupId>commons-httpclient</groupId>
                 <artifactId>commons-httpclient</artifactId>
+              </exclusion>
+              <exclusion>
+                <groupId>dnsjava</groupId>
+                <artifactId>dnsjava</artifactId>
               </exclusion>
             </exclusions>
           </dependency>
@@ -3038,6 +3042,10 @@
                 <groupId>commons-httpclient</groupId>
                 <artifactId>commons-httpclient</artifactId>
               </exclusion>
+              <exclusion>
+                <groupId>dnsjava</groupId>
+                <artifactId>dnsjava</artifactId>
+              </exclusion>
             </exclusions>
           </dependency>
           <dependency>
@@ -3545,6 +3553,10 @@
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>servlet-api-2.5</artifactId>
               </exclusion>
+              <exclusion>
+                <groupId>dnsjava</groupId>
+                <artifactId>dnsjava</artifactId>
+              </exclusion>
             </exclusions>
           </dependency>
           <dependency>
@@ -3664,6 +3676,10 @@
               <exclusion>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>servlet-api-2.5</artifactId>
+              </exclusion>
+              <exclusion>
+                <groupId>dnsjava</groupId>
+                <artifactId>dnsjava</artifactId>
               </exclusion>
             </exclusions>
           </dependency>
@@ -3995,6 +4011,10 @@
                 <groupId>commons-httpclient</groupId>
                 <artifactId>commons-httpclient</artifactId>
               </exclusion>
+              <exclusion>
+                <groupId>dnsjava</groupId>
+                <artifactId>dnsjava</artifactId>
+              </exclusion>
             </exclusions>
           </dependency>
           <dependency>
@@ -4243,6 +4263,10 @@
               <exclusion>
                 <groupId>javax.servlet</groupId>
                 <artifactId>servlet-api</artifactId>
+              </exclusion>
+              <exclusion>
+                <groupId>dnsjava</groupId>
+                <artifactId>dnsjava</artifactId>
               </exclusion>
             </exclusions>
           </dependency>
