@@ -83,15 +83,15 @@
     <javassist.version>3.29.2-GA</javassist.version>
     <msgpack.version>0.6.6</msgpack.version>
     <reflections.version>0.9.10</reflections.version>
-    <avro.version>1.11.2</avro.version>
+    <avro.version>1.11.3</avro.version>
     <metrics.version>4.2.19</metrics.version>
     <jetty.version>9.4.51.v20230217</jetty.version>
     <jersey.version>2.40</jersey.version>
     <javax.validation.api>2.0.1.Final</javax.validation.api>
     <asm.version>9.5</asm.version>
     <excludedGroups />
-    <memoryMb>2500</memoryMb>
-    <directMemoryMb>4500</directMemoryMb>
+    <memoryMb>2560</memoryMb>
+    <directMemoryMb>2560</directMemoryMb>
     <rat.skip>true</rat.skip>
     <license.skip>true</license.skip>
     <docker.repository>apache/drill</docker.repository>
