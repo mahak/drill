@@ -55,20 +55,20 @@
     <calcite.groupId>org.apache.calcite</calcite.groupId>
     <calcite.version>1.34.0</calcite.version>
     <avatica.version>1.23.0</avatica.version>
-    <janino.version>3.1.8</janino.version>
+    <janino.version>3.1.11</janino.version>
     <sqlline.version>1.12.0</sqlline.version>
-    <jackson.version>2.14.3</jackson.version>
-    <zookeeper.version>3.5.7</zookeeper.version>
+    <jackson.version>2.16.1</jackson.version>
+    <zookeeper.version>3.5.10</zookeeper.version>
     <kerby.version>1.0.0</kerby.version>
     <findbugs.version>3.0.5</findbugs.version>
     <netty.tcnative.classifier />
-    <commons.io.version>2.14.0</commons.io.version>
+    <commons.io.version>2.15.0</commons.io.version>
     <commons.collections.version>4.4</commons.collections.version>
     <hamcrest.version>2.2</hamcrest.version>
-    <curator.version>5.2.0</curator.version>
+    <curator.version>5.5.0</curator.version>
     <wiremock.standalone.version>2.23.2</wiremock.standalone.version>
     <jmockit.version>1.47</jmockit.version>
-    <logback.version>1.3.5</logback.version>
+    <logback.version>1.3.14</logback.version>
     <mockito.version>3.11.2</mockito.version>
     <!--
       Currently, Hive storage plugin only supports Apache Hive 3.1.3 or vendor specific variants of the
@@ -84,14 +84,15 @@
     <msgpack.version>0.6.6</msgpack.version>
     <reflections.version>0.9.10</reflections.version>
     <avro.version>1.11.3</avro.version>
+    <bouncycastle.version>1.77</bouncycastle.version>
     <metrics.version>4.2.19</metrics.version>
     <jetty.version>9.4.51.v20230217</jetty.version>
     <jersey.version>2.40</jersey.version>
     <javax.validation.api>2.0.1.Final</javax.validation.api>
     <asm.version>9.5</asm.version>
     <excludedGroups />
-    <memoryMb>2560</memoryMb>
-    <directMemoryMb>2560</directMemoryMb>
+    <memoryMb>3072</memoryMb>
+    <directMemoryMb>3072</directMemoryMb>
     <rat.skip>true</rat.skip>
     <license.skip>true</license.skip>
     <docker.repository>apache/drill</docker.repository>
@@ -108,9 +109,9 @@
     <javax.el.version>3.0.0</javax.el.version>
     <surefire.version>3.1.2</surefire.version>
     <jna.version>5.13.0</jna.version>
-    <commons.compress.version>1.24.0</commons.compress.version>
+    <commons.compress.version>1.25.0</commons.compress.version>
     <hikari.version>4.0.3</hikari.version>
-    <netty.version>4.1.73.Final</netty.version>
+    <netty.version>4.1.101.Final</netty.version>
     <httpclient.version>4.5.14</httpclient.version>
     <libthrift.version>0.18.1</libthrift.version>
     <derby.version>10.14.2.0</derby.version>
@@ -119,17 +120,17 @@
     <commons.lang3.version>3.10</commons.lang3.version>
     <testcontainers.version>1.18.3</testcontainers.version>
     <typesafe.config.version>1.4.2</typesafe.config.version>
-    <commons.codec.version>1.14</commons.codec.version>
+    <commons.codec.version>1.16.0</commons.codec.version>
     <xerces.version>2.12.2</xerces.version>
     <commons.configuration.version>1.10</commons.configuration.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <httpdlog-parser.version>5.10.0</httpdlog-parser.version>
     <yauaa.version>7.19.2</yauaa.version>
-    <log4j.version>2.20.0</log4j.version>
+    <log4j.version>2.22.0</log4j.version>
     <aircompressor.version>0.25</aircompressor.version>
     <iceberg.version>0.12.1</iceberg.version>
     <univocity-parsers.version>2.8.3</univocity-parsers.version>
-    <mongo.version>4.3.3</mongo.version>
+    <mongo.version>4.11.1</mongo.version>
     <swagger.version>2.1.12</swagger.version>
     <junit.args />
   </properties>
@@ -2766,8 +2767,13 @@
 
           <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcpkix-jdk15on</artifactId>
-            <version>1.60</version>
+            <artifactId>bcprov-jdk18on</artifactId>
+            <version>${bouncycastle.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpkix-jdk18on</artifactId>
+            <version>${bouncycastle.version}</version>
           </dependency>
 
           <!--Eclipse Jetty dependecies-->
